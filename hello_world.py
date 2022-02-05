@@ -145,7 +145,6 @@ def somar_todos_os_valores_da_minha_lista_de_numeros(minha_lista):
 # RESULTADO = 12312358 
 valor_total= somar_todos_os_valores_da_minha_lista_de_numeros(minha_lista)
 print('Valor total (12312358):')
-print(valor_total)
 print('Valor total (esperamos2312358): ')
 print(valor_total)
 
@@ -154,26 +153,26 @@ print(" \U0001f680 ---------------- Algoritimo de ordenacao bubble sort --------
 
 def algoritmo_bubble_sort(minha_lista):
     # Python program for implementation of Bubble Sort
- def  algoritimo_bubble_sort(minha_lista):
     n = len(minha_lista)
     # Traverse through all array elements
-    for i in range(n):
-  
+    for i in range(n-1):
+    #range (n) also work but outer loop will
+
         # Last i elements are already in place
         for j in range(0, n-i-1):
   
             # traverse the array from 0 to n-i-1
             # Swap if the element found is greater
             # than the next element
-            if minha_lista[j] > minha_lista[j+1] :
-                minha_lista[j], minha_lista[j+1] = minha_lista[j+1], minha_lista[j]
+            if minha_lista[j] > minha_lista[j + 1] :
+                minha_lista[j], minha_lista[j + 1] = minha_lista[j + 1], minha_lista[j]
     return minha_lista
 
 
 print('minha lista antes: ')
 print(minha_lista)
 print('minha lista depois: ')
-minha_lista_depois = (minha_lista)
+minha_lista_depois = algoritmo_bubble_sort(minha_lista)
 print(minha_lista_depois)
 
 print("--------------------------------------------------------")
